@@ -6,3 +6,6 @@ venv/
 .env
 .streamlit/
 models/
+
+# Do not version models
+models/
