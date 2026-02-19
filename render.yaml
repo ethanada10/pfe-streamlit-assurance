@@ -3,7 +3,9 @@ services:
     name: pfe-streamlit-assurance
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install -r requirements.txt
+      python3 scripts/train_prod_model.py --csv data/dataset_40k_lignes.csv --out models/prod/premium_model_prod.joblib
     startCommand: streamlit run src/app/app.py --server.port $PORT --server.address 0.0.0.0
     envVars:
       - key: PYTHONUNBUFFERED
