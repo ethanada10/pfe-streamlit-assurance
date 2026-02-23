@@ -184,7 +184,7 @@ Si le modèle est trop volumineux :
 # 🧪 Utilisation
 
 Page Actuariat  
-→ Saisir capital, durée, âge, taux crédit, taux technique, abattement, quotité  
+→ Saisir capital, durée, âge, taux crédit, taux technique, abattement, quotité  (mettre les taux en ecriture décimale)
 → Résultat : prime actuarielle + échéancier  
 
 Page IA Production  
