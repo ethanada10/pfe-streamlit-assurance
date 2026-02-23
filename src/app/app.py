@@ -7,15 +7,18 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-# Global CSS
-CSS_PATH = os.path.join(PROJECT_ROOT, "assets", "styles.css")
-if os.path.exists(CSS_PATH):
-    st.markdown(f"<style>{open(CSS_PATH, 'r', encoding='utf-8').read()}</style>", unsafe_allow_html=True)
-
 st.set_page_config(
     page_title="Assurance emprunteur — Actuariat & Machine Learning",
     layout="wide",
 )
+
+# Global CSS (APRES set_page_config)
+CSS_PATH = os.path.join(PROJECT_ROOT, "assets", "styles.css")
+if os.path.exists(CSS_PATH):
+    st.markdown(
+        f"<style>{open(CSS_PATH, 'r', encoding='utf-8').read()}</style>",
+        unsafe_allow_html=True
+    )
 
 st.title("Assurance emprunteur décès — Calcul actuariel et prédiction ML")
 
