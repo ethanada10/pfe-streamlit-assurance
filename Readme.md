@@ -8,7 +8,7 @@ Ce projet est une application Streamlit multi-pages permettant de :
 - comparer les deux approches dans une interface claire et structurée.
 
 L’objectif est de relier un moteur actuariel rigoureux à une approximation IA exploitable en contexte opérationnel.
-
+Nous avons d'abord commencé par faire le travail sur un Notebook disponible également dans le dossier, avant de passer à une application interactive
 ---
 
 # 🎯 Objectif du projet
